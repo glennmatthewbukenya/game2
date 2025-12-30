@@ -1,0 +1,155 @@
+﻿Snake Game
+A classic Snake Game developed using Python and Pygame, designed with a modular, class-based architecture in Agile.
+The game features smooth movement, sound effects, animated food, multiple game states and levels, and increasing difficulty.
+This project was developed as part of coursework at Victoria University (2025) by:
+1. Busuulwa Peter Nsereko
+
+2. Glenn Mathew
+
+  
+
+________________
+
+
+1: Game Overview
+The player controls a snake that moves around a grid-based environment, collecting food to grow longer and increase their score.
+The game ends if the snake collides with the wall or with itself.
+The game includes:
+   * Start menu
+   * Gameplay with HUD (score, level, time)
+   * Game-over screen with restart option
+   * Sound and visual effects
+   * Game-loading state
+  
+2: Game Architecture
+The game follows a modular design to improve readability, maintainability, and scalability.
+Core Modules
+File
+	Description
+	main.py
+	Main game loop, rendering, and state management
+	snake.py
+	Snake movement, growth, self & wall collision
+	food.py
+	Food spawning and food collision detection
+	start_menu.py
+	Start menu UI and navigation
+	game_over_menu.py
+	Game-over screen UI
+	settings_menu.py
+	Game configuration and options
+	sound.py
+	Sound loading and playback
+	  
+
+3: Development Methodology
+The project was developed using the Agile Methodology, enabling iterative development and continuous improvement.
+Agile practices applied include:
+      * Incremental feature development
+      * Continuous testing and debugging
+      * Frequent refactoring for better modularity
+      * Flexibility in adding new features such as levels, sound effects, and UI states
+
+
+
+4:  Controls
+Key
+	Action
+	↑
+	Move Up
+	↓
+	Move Down
+	←
+	Move Left
+	→
+	Move Right
+	Enter
+	Start / Restart
+	Esc
+	Quit Game
+	5: Scoring System
+         * Each food item increases the snake’s length
+         * Score increases based on game speed (FPS)
+         * Higher levels introduce faster movement and increased challenge
+
+6: Game Rules
+            * The snake cannot reverse direction instantly
+            * The Snakes only moves in forward direction, head to tail
+            * The game ends if:
+
+               1. The snake hits the wall
+               2. The snake collides with itself
+
+                  * The player progresses by surviving longer and collecting more food
+  
+
+
+7: Visual & Audio Features
+                     * Smooth snake movement animation
+                     * Animated “wiggle” food effect
+                     * Background GUI for gameplay
+                     * Sound effects for:
+
+                        1. Eating food
+                        2. Game over
+                        3. Menu interactions
+  
+Testing & Validation
+The game was tested for:
+                           * Accurate snake movement
+                           * Correct collision detection
+                           * Stable scoring and level progression
+                           * Visual Size on Screen Fits all Desktop Devices
+                           * Menu navigation and state transitions
+
+All major bugs were resolved during testing.
+________________
+
+
+🛠️ Tools & Technologies Used
+                              * Python – Core programming language
+                              * Pygame – Game development framework
+                              * Visual Studio Code (VS Code) – Code editor
+                              * Adobe Photoshop – Image and asset editing
+                              * Adobe Illustrator – Vector graphics and UI elements
+                              * Figma – UI/UX design and prototyping
+
+________________
+
+
+ How to Run the Game
+Requirements
+                                 * Python 3.9+
+                                 * Pygame library
+
+Install Dependencies
+pip install pygame
+
+
+Run the Game
+python main.py
+
+
+________________
+
+
+Assets
+                                    * Images are stored in the assets/ directory or Folder
+                                    * Sound effects are managed via the sound.py module from the Sound Folder
+
+________________
+
+
+👨‍💻 Developers
+                                       * Busuulwa Peter Nsereko
+
+                                       * Glenn Mathew
+
+🎓 Victoria University
+ 📅 Year: 2025
+________________
+
+
+📜 License
+This project is developed for educational purposes only.
+All assets used are for academic and non-commercial use.
